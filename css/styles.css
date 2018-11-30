@@ -57,7 +57,7 @@ header a {
   margin-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: #ededed;
   font-weight: 900;
 }
 
@@ -69,15 +69,18 @@ a {
 }
 
 a:link {
-
+  /* make a smooth color animation */
+  transition: color .4s ease;
 }
 
 a:hover {
-
+  /* set the color for the links to gray */
+  color: #b2b2b2;
 }
 
 a:active {
-
+  /* set the color for the links to salmon */
+  color: #f78460;
 }
 
 ul li {
@@ -130,7 +133,7 @@ span {
 
 .portfolio {
   /* set the background of the portfolio section */
-  background-color: #fff;
+  background-color: #ededed;
 }
 
 /* ---------------------CONTACT SECTION ------------------------ */
@@ -300,7 +303,7 @@ footer .btn-back {
     display: block;
     width: 100%;
     background-color: #e2cec5;
-    padding: 0 1em;
+    padding: 0 1.5em;
   }
 
   .message {
