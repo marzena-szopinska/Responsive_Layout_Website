@@ -107,7 +107,7 @@ span {
   clear: both;
 }
 
-/* --------------------------------------------------- */
+/* ---------------------CONTAINERS ------------------------ */
 
 .container {
   /* add some space inside the container */
@@ -119,16 +119,21 @@ span {
   padding-bottom: 2.5em;
 }
 
+/* ---------------------HEADER ------------------------ */
 .profile-img {
   width: 70%;
   margin-top: 30px;
   margin-bottom: 8px;
 }
 
+/* ---------------------PORTFOLIO SECTION ------------------------ */
+
 .portfolio {
   /* set the background of the portfolio section */
   background-color: #fff;
 }
+
+/* ---------------------CONTACT SECTION ------------------------ */
 
 .contact .container {
   padding-top: 2em;
@@ -143,6 +148,7 @@ span {
   padding-top: 1em;
 }
 
+/* ---------------------FOOTER ------------------------ */
 footer .container {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -165,4 +171,47 @@ footer .btn-back {
   font-size: 0.8125em;
   /* align the text with the name */
   padding-top: 3px;
+}
+
+/* ---------------------MEDIA QUERIES ------------------------ */
+@media (min-width: 768px){
+
+  .container {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  header .container {
+    /* add some space between the header and the projects section */
+    padding-bottom: 3.5em;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+
+  }
+  nav li a {
+    background-color: inherit;
+  }
+  header p {
+    width: 60%;
+    float: left;
+    padding-right: 1em;
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 0;
+    font-size: 1.35em;
+  }
+
+  header .name {
+    padding-top: 1em;
+  }
+  .profile-img {
+    width: 40%;
+    float: right;
+    margin-top: 40px;
+  }
+
+
 }
