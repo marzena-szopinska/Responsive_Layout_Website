@@ -96,6 +96,17 @@ hr {
   margin: 0 auto;
 }
 
+span {
+  font-weight: 900;
+  color: #727272;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* --------------------------------------------------- */
 
 .container {
@@ -122,8 +133,33 @@ hr {
 .contact .container {
   padding-top: 2em;
   padding-bottom: 3em;
+  color: #595959;
 }
 
 .contact-info {
   padding-top: 1em;
+}
+
+footer .container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+footer {
+  font-weight: 900;
+}
+
+footer .name {
+  /* position the name to the left */
+  float: left;
+}
+
+footer .btn-back {
+  /* position the button to the right */
+  float: right;
+  text-transform: uppercase;
+  /* decrease the font size */
+  font-size: 0.8125em;
+  /* align the text with the name */
+  padding-top: 3px;
 }
