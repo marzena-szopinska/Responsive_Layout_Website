@@ -183,6 +183,7 @@ footer .btn-back {
   .container {
     padding-right: 2em;
     padding-left: 2em;
+    margin: 0 auto;
   }
 
   header .container {
@@ -258,4 +259,57 @@ footer .btn-back {
     display: block;
     padding: 0 1em;;
   }
+}
+
+@media (min-width: 1024px){
+
+  .container {
+    padding-right: 3em;
+    padding-left: 3em;
+    max-width: 1400px;
+  }
+
+  .col {
+    /* set the width of the column to 33% */
+    width: 33%;
+  }
+
+  header .name {
+    float: left;
+  }
+
+  nav ul {
+    float: right;
+    margin-top: 20px;
+  }
+
+  nav li {
+    margin-left: 40px;
+  }
+
+  nav {
+    padding-top: 1em;
+  }
+
+  .portfolio .container {
+    padding-right: 1em;
+    padding-left: 1.5em;
+  }
+
+  .main-container {
+    display: block;
+    width: 100%;
+    background-color: #e2cec5;
+    padding: 0 1em;
+  }
+
+  .message {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  footer .container {
+    padding-bottom: 2em;
+  }
+
 }
