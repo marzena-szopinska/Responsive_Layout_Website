@@ -5,9 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Test</h1>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <h1 class="name">Marzena Szopinska</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/responsive-layout-profile.png" alt="Profile picture" />
+        <p>Hi! I am a front-end developer who loves responsive design and css.I recently finished a degree in front-end development
+          at Treehouse and am excited to put all my skills to use!</p>
+      </div>
+    </header>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="col">
+          <img src="images/portfolio-1.png" alt="picture of the marketing page" />
+          <h3>Marketing Page</h3>
+          <p class="portfolio-info">This project showes the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/portfolio-2.png" alt="picture of the search page" />
+          <h3>Search Page</h3>
+          <p class="portfolio-info">This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/portfolio-3.png" alt="picture of the travel app" />
+          <h3>Travel App</h3>
+          <p class="portfolio-info">This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/portfolio-4.png" alt="picture of the map of favorite spots" />
+          <h3>Map of Favorite Spots</h3>
+          <p class="portfolio-info">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/portfolio-5.png" alt="picture of the photo gallery" />
+          <h3>Photo Gallery</h3>
+          <p class="portfolio-info">This project showes pictures from a recent trip to the viewer and allows them to easly navigate through photos.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/portfolio-6.png" alt="picture of the calculator project" />
+          <h3>Calculator</h3>
+          <p class="portfolio-info">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you are interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
+        <p>Phone: +1(123) 555 678</p>
+        <p>Email: <a href="mailto:my_email@gmail.com">my_email@gmail.com</a></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>Marzena Szopinska</p>
+        <p class="back-btn"><a href="#">Back To Top</a></p>
+      </div>
+    </footer>
   </body>
 </html>

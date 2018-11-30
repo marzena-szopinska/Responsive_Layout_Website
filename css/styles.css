@@ -1,3 +1,63 @@
+
+/* BASIC STYLING */
+
+* {
+  box-sizing: border-box;
+  /* remove all default spaces */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* set the font size to 16px */
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  background-color: #e2cec5;
+  /* center the text */
+  text-align: center;
+}
+
 h1 {
-  color: purple;
+  /* remove defaut top margin from the heading */
+  margin-top: 0;
+}
+
+header a, h2 {
+  text-transform: uppercase;
+  /* decrease the font size */
+  font-size: 0.9375em;
+}
+
+a {
+  /* remove default underline */
+  text-decoration: none;
+  /* inherit the color from the body */
+  color: inherit;
+}
+
+a:link {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+img {
+  /* fit the image inside its container */
+  width: 100%;
+}
+
+.container {
+  /* add some space inside the container */
+  padding: 1em 1em;
+}
+
+.portfolio {
+  background-color: #fff;
 }
