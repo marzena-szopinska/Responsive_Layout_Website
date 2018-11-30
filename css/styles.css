@@ -173,6 +173,10 @@ footer .btn-back {
   padding-top: 3px;
 }
 
+.bigger-devices {
+  display: none;
+}
+
 /* ---------------------MEDIA QUERIES ------------------------ */
 @media (min-width: 768px){
 
@@ -213,5 +217,26 @@ footer .btn-back {
     margin-top: 40px;
   }
 
+  .col {
+    width: 50%;
+    float: left;
+    /* add some padding to the left of the column */
+    padding-left: .3em;
+    padding-right: .3em;
+  }
+
+  .btn-back {
+    display: none;
+  }
+
+  .bigger-devices {
+    display: inline-block;
+    float: right;
+  }
+
+  .bigger-devices li {
+    display: inline-block;
+    margin-left: 30px;
+  }
 
 }
