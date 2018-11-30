@@ -133,6 +133,9 @@ span {
 .contact .container {
   padding-top: 2em;
   padding-bottom: 3em;
+}
+
+.contact p {
   color: #595959;
 }
 
