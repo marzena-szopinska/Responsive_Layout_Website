@@ -91,6 +91,11 @@ img {
   width: 100%;
 }
 
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* --------------------------------------------------- */
 
 .container {
@@ -112,4 +117,13 @@ img {
 .portfolio {
   /* set the background of the portfolio section */
   background-color: #fff;
+}
+
+.contact .container {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.contact-info {
+  padding-top: 1em;
 }
