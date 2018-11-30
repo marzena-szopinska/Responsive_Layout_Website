@@ -44,6 +44,11 @@ header p {
   color: #595959;
 }
 
+header p,
+.contact p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header a, h2 {
   text-transform: uppercase;
   /* decrease the font size */
@@ -136,6 +141,33 @@ span {
   background-color: #ededed;
 }
 
+/* ---------------------SKILLS SECTION ------------------------ */
+.skills .container {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.skills ul li {
+  /* add some space to the bottom */
+  margin-bottom: 1em;
+}
+
+.skills ul li img {
+  /* set image to 50px */
+  width: 60px;
+  /* make a smooth scale transition */
+  transition: transform .4s ease;
+
+}
+
+.skills ul li img:hover {
+  transform: scale(1.2);
+}
+
+.skills ul li .react-logo {
+  width: 150px;
+}
+
 /* ---------------------CONTACT SECTION ------------------------ */
 
 .contact .container {
@@ -215,13 +247,23 @@ footer .btn-back {
   header .name {
     padding-top: 1em;
   }
+
+  .skills ul li {
+    display: inline-block;
+    padding-right: 2em;
+  }
+
+  .react-logo {
+    padding-bottom: 1em;
+  }
+
   .profile-img {
     width: 40%;
     float: right;
     margin-top: 40px;
   }
 
-  .contact {
+  .contact p {
     font-size: 1.35em;
   }
 
