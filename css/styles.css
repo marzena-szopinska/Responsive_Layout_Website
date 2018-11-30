@@ -1,6 +1,7 @@
 
 /* BASIC STYLING */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* remove all default spaces */
   margin: 0;
@@ -78,6 +79,7 @@ a {
 
 a:link {
   /* make a smooth color animation */
+  -webkit-transition: color .4s ease;
   transition: color .4s ease;
 }
 
@@ -167,12 +169,16 @@ span {
   /* set image to 50px */
   width: 60px;
   /* make a smooth scale transition */
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
 
 }
 
 .skills ul li img:hover {
   /* scale images */
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
