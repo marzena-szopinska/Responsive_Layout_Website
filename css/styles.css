@@ -1,6 +1,5 @@
 
 /* BASIC STYLING */
-
 * {
   box-sizing: border-box;
   /* remove all default spaces */
@@ -16,6 +15,7 @@ body {
   background-color: #e2cec5;
   /* center the text */
   text-align: center;
+  /* add some vertical spacing between lines of text */
   line-height: 1.5;
 }
 
@@ -36,6 +36,7 @@ h3 {
   /* add some top and bottom padding */
   padding-top: 1em;
   padding-bottom: .5em;
+  /* increase the font size */
   font-size: 1.35em;
 }
 
@@ -46,10 +47,12 @@ header p {
 
 header p,
 .contact p {
+  /* set a different font for the paragraphs */
   font-family: 'Montserrat', sans-serif;
 }
 
 header a, h2 {
+  /* make the text uppercase */
   text-transform: uppercase;
   /* decrease the font size */
   font-size: 0.9375em;
@@ -58,11 +61,11 @@ header a, h2 {
 header a {
   /* make the link the block element for better user experience on smaller devices */
   display: block;
-  background-color: red;
   margin-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ededed;
+  /* make the text bolder */
   font-weight: 900;
 }
 
@@ -79,12 +82,12 @@ a:link {
 }
 
 a:hover {
-  /* set the color for the links to gray */
+  /* set the color for the links to gray color*/
   color: #b2b2b2;
 }
 
 a:active {
-  /* set the color for the links to salmon */
+  /* set the color for the links to salmon color */
   color: #f78460;
 }
 
@@ -100,15 +103,18 @@ img {
 }
 
 hr {
+  /* set width of horizontal rule to 90% and center it */
   width: 90%;
   margin: 0 auto;
 }
 
 span {
+  /* make the text bolder */
   font-weight: 900;
   color: #727272;
 }
 
+/* clear floats */
 .clearfix::after {
   content: "";
   display: table;
@@ -143,8 +149,13 @@ span {
 
 /* ---------------------SKILLS SECTION ------------------------ */
 .skills .container {
+  /* add more space inside the container */
   padding-bottom: 2em;
   padding-top: 2em;
+}
+
+.skills ul {
+  margin-top: 10px;
 }
 
 .skills ul li {
@@ -161,16 +172,19 @@ span {
 }
 
 .skills ul li img:hover {
+  /* scale images */
   transform: scale(1.2);
 }
 
 .skills ul li .react-logo {
+  /* make the react logo bigger */
   width: 150px;
 }
 
 /* ---------------------CONTACT SECTION ------------------------ */
 
 .contact .container {
+  /* add some space inside the container */
   padding-top: 2em;
   padding-bottom: 3em;
 }
@@ -184,12 +198,14 @@ span {
 }
 
 /* ---------------------FOOTER ------------------------ */
+
 footer .container {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
 footer {
+  /* make the text bolder */
   font-weight: 900;
 }
 
@@ -209,6 +225,7 @@ footer .btn-back {
 }
 
 .bigger-devices {
+  /* hide the bigger devices div */
   display: none;
 }
 
@@ -216,31 +233,41 @@ footer .btn-back {
 @media (min-width: 768px){
 
   .container {
+    /* increace the space inside the container */
     padding-right: 2em;
     padding-left: 2em;
     margin: 0 auto;
   }
 
+  /* ---------------------HEADER ------------------------ */
   header .container {
     /* add some space between the header and the projects section */
     padding-bottom: 3.5em;
   }
 
   nav li {
+    /* display the list elements as inline block element */
     display: inline-block;
     margin-left: 20px;
 
   }
   nav li a {
+    /* inherit the background color from the header  */
     background-color: inherit;
   }
+
   header p {
+    /* set width of the paragraph to 60% */
     width: 60%;
+    /* float it to the left */
     float: left;
     padding-right: 1em;
+    /* align the text to the left */
     text-align: left;
+    /* add some spacing */
     margin-top: 30px;
     padding-top: 0;
+    /* increase the font size */
     font-size: 1.35em;
   }
 
@@ -248,7 +275,37 @@ footer .btn-back {
     padding-top: 1em;
   }
 
+  .profile-img {
+    /* set the width of the image to 40% */
+    width: 40%;
+    /* float the image to the right */
+    float: right;
+    /* add some space to the top of the image */
+    margin-top: 40px;
+  }
+
+/* ---------------------PORTFOLIO SECTION ------------------------ */
+  .col {
+    /* set width to 50% */
+    width: 50%;
+    /* float all colums to the left */
+    float: left;
+    /* add some padding to the left of the column */
+    padding-left: .3em;
+    padding-right: .3em;
+  }
+
+  .col p {
+    /* set the width to 80% */
+    width: 80%;
+    /* center the paragraph */
+    margin: 0 auto;
+  }
+
+/* ---------------------SKILLS SECTION ------------------------ */
+
   .skills ul li {
+    /* display the list as inline block */
     display: inline-block;
     padding-right: 2em;
   }
@@ -257,41 +314,33 @@ footer .btn-back {
     padding-bottom: 1em;
   }
 
-  .profile-img {
-    width: 40%;
-    float: right;
-    margin-top: 40px;
-  }
+/* ---------------------CONTACTS SECTION ------------------------ */
 
   .contact p {
+    /* increase the size of the paragraph */
     font-size: 1.35em;
   }
 
-  .col {
-    width: 50%;
-    float: left;
-    /* add some padding to the left of the column */
-    padding-left: .3em;
-    padding-right: .3em;
-  }
-
-  .col p {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .btn-back {
+    /* hide the button */
     display: none;
   }
 
+  /* ---------------------FOOTER ------------------------ */
+
   .bigger-devices {
+    /* show the hidden container */
     display: inline-block;
+    /* float it to the right */
     float: right;
   }
 
   .bigger-devices li {
+    /* display it as inline block */
     display: inline-block;
+    /* add some space between the list elements */
     margin-left: 10px;
+    /* make the link uppercase */
     text-transform: uppercase;
   }
 
@@ -309,34 +358,44 @@ footer .btn-back {
 @media (min-width: 1024px){
 
   .container {
+    /* add more space inside the container */
     padding-right: 3em;
     padding-left: 3em;
+    /* prevent streaching of the container */
     max-width: 1400px;
   }
+
+/* ---------------------HEADER SECTION ------------------------ */
+
+header .name {
+  /* float the text to the left */
+  float: left;
+}
+
+nav ul {
+  /* float list to the right */
+  float: right;
+  /* add some spacing to the top of the list */
+  margin-top: 20px;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav {
+  padding-top: 1em;
+}
+
+/* ---------------------PORTFOLIO SECTION ------------------------ */
 
   .col {
     /* set the width of the column to 33% */
     width: 33%;
   }
 
-  header .name {
-    float: left;
-  }
-
-  nav ul {
-    float: right;
-    margin-top: 20px;
-  }
-
-  nav li {
-    margin-left: 40px;
-  }
-
-  nav {
-    padding-top: 1em;
-  }
-
   .portfolio .container {
+    /* add some spacing */
     padding-right: 1em;
     padding-left: 1.5em;
   }
@@ -344,14 +403,22 @@ footer .btn-back {
   .main-container {
     display: block;
     width: 100%;
+    /* set its background color */
     background-color: #e2cec5;
+    /* add some spacing */
     padding: 0 1.5em;
   }
 
+  /* ---------------------CONTACT SECTION ------------------------ */
+
   .message {
+    /* set width of the text to 70% */
     width: 70%;
+    /* center it */
     margin: 0 auto;
   }
+
+  /* ---------------------FOOTER ------------------------ */
 
   footer .container {
     padding-bottom: 2em;
