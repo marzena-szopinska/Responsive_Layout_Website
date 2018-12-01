@@ -327,6 +327,11 @@ footer .btn-back {
     font-size: 1.35em;
   }
 
+  .message {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .btn-back {
     /* hide the button */
     display: none;
